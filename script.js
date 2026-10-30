@@ -117,3 +117,48 @@ function renderExpertise(key) {
 select.addEventListener("change", (event) => renderExpertise(event.target.value));
 document.querySelector("#current-year").textContent = String(new Date().getFullYear());
 renderExpertise(select.value);
+
+const projectDialog = document.querySelector("#project-dialog");
+const projectDialogTitle = document.querySelector("#project-dialog-title");
+const projectDialogCategory = document.querySelector("#project-dialog-category");
+const projectDialogBody = document.querySelector("#project-dialog-body");
+
+document.querySelectorAll("[data-project-detail]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const template = document.getElementById(trigger.dataset.projectDetail);
+    const card = trigger.closest(".project-card");
+    const projectTitle = card && card.querySelector("h3");
+    const projectCategory = card && card.querySelector(".project-topline span");
+
+    if (!template || !card || !projectTitle || !projectCategory) {
+      throw new Error("Project details could not be loaded.");
+    }
+
+    projectDialogTitle.textContent = projectTitle.textContent;
+    projectDialogCategory.textContent = projectCategory.textContent;
+    projectDialogBody.replaceChildren(template.content.cloneNode(true));
+    projectDialog.showModal();
+  });
+});
+
+document.querySelector("[data-close-project-dialog]").addEventListener("click", () => {
+  projectDialog.close();
+});
+
+projectDialog.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    event.preventDefault();
+    projectDialog.close();
+  }
+});
+
+projectDialog.addEventListener("cancel", (event) => {
+  event.preventDefault();
+  projectDialog.close();
+});
+
+projectDialog.addEventListener("click", (event) => {
+  if (event.target === projectDialog) {
+    projectDialog.close();
+  }
+});

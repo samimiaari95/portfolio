@@ -1,6 +1,6 @@
 # Sami Miaari — Career Profile
 
-A lightweight, accessible career profile built as a static site for GitHub Pages. The expertise selector presents detailed evidence across applied machine learning, hydrology, geospatial data engineering, delivery, environmental systems, and scientific communication. The project portfolio covers groundwater forecasting, soil-water simulations, climate and geospatial tooling, drought analysis, water-network design, environmental monitoring, pavement design, and Civil 3D tutorials.
+A lightweight, accessible career profile built as a static site for GitHub Pages. The expertise selector presents detailed evidence across applied machine learning, hydrology, geospatial data engineering, delivery, environmental systems, and scientific communication. The project portfolio presents research and engineering work with expanded project details, plots where available, and links to public code and reports.
 
 Published site: <https://samimiaari95.github.io/mycareerpage/>
 
@@ -20,6 +20,6 @@ The workflow in `.github/workflows/pages.yml` enables GitHub Pages and deploys t
 
 ## Content
 
-Professional details are based on the CV and experience materials supplied for this profile. Personal contact details and private application correspondence are not included. Research manuscripts are described as under peer review, not as published work.
+The profile presents professional experience and research without personal contact details. Research manuscripts are described as under peer review, not as published work.
 
-The portfolio links to public repositories where available and includes ZIP downloads of their source. The Izal water-distribution project links to its public repository and downloadable report. CV-documented projects without public assets are described without implying that source files are available.
+The portfolio links to public repositories and downloadable materials where available. Supporting code and documents for company projects are identified as private and are not shared publicly.
