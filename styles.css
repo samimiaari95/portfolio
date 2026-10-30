@@ -184,6 +184,9 @@ h2 span { color: var(--green); }
   font: 10px var(--mono);
 }
 
+.hero-email { color: var(--green); text-decoration-color: #9eac9d; text-underline-offset: 3px; }
+.hero-email:hover,
+.hero-email:focus-visible { color: var(--green-dark); }
 .meta-separator { width: 4px; height: 4px; border-radius: 50%; background: #a4aaa2; }
 
 .hero-art {
@@ -434,7 +437,10 @@ h2 span { color: var(--green); }
 .closing-links p { max-width: 285px; margin: 0 0 4px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .button-light { background: var(--lime); color: var(--green-dark); }
 .button-light:hover { background: #d0df79; }
+.closing-email { color: var(--green-dark); font: 11px var(--mono); text-underline-offset: 3px; }
+.closing-linkedin,
 .closing-github { color: var(--muted); font-size: 10px; font-weight: 600; text-decoration: none; }
+.closing-linkedin span,
 .closing-github span { color: var(--green); }
 .site-footer { min-height: 72px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); color: #7d8880; font: 9px var(--mono); }
 .footer-wordmark { color: var(--ink); font: 800 12px var(--display); }
