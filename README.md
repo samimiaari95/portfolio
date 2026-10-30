@@ -16,7 +16,7 @@ Then visit `http://localhost:8000`.
 
 ## Publish with GitHub Pages
 
-This site is plain static HTML, CSS, and JavaScript. In the repository settings, choose **Pages → Build and deployment → Deploy from a branch**, select `main` and `/(root)`, then save. GitHub Pages will publish the site and update it on each push.
+The workflow in `.github/workflows/pages.yml` enables GitHub Pages and deploys this plain static site after each push to `main`. It uses the official GitHub Pages actions and publishes the repository root.
 
 ## Content
 
