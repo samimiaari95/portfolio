@@ -2,6 +2,8 @@
 
 A lightweight, accessible career profile built as a static site for GitHub Pages. The expertise selector presents detailed evidence across applied machine learning, hydrology, geospatial data engineering, delivery, environmental systems, and scientific communication.
 
+Published site: <https://samimiaari95.github.io/mycareerpage/>
+
 ## Run locally
 
 Open `index.html` in a browser, or serve this directory with any static file server:
