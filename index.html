@@ -117,34 +117,85 @@
       <section class="work-section page-shell" id="work">
         <div class="section-heading section-heading-compact">
           <div>
-            <p class="eyebrow">02 / Selected work</p>
-            <h2>Research with a <span>real-world thread.</span></h2>
+            <p class="eyebrow">02 / Project portfolio</p>
+            <h2>Research, software &amp;<br><span>engineering in practice.</span></h2>
           </div>
-          <p class="section-aside">A selection of reproducible work that shows how I move from data and physical processes to useful results.</p>
+          <p class="section-aside">A broader view of the research, software, environmental analytics, and engineering projects documented across my CVs.</p>
         </div>
         <div class="project-grid">
-          <a class="project-card project-featured" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">
+          <article class="project-card project-featured">
             <div class="project-topline"><span>01 / MACHINE LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
             <div class="project-visual forecast-visual" aria-hidden="true">
               <div class="chart-grid"></div><svg viewBox="0 0 480 150" role="presentation"><path class="chart-band" d="M0 113 C45 99 60 110 102 89 S164 91 204 66 S263 79 306 46 S369 58 406 29 S453 38 480 14 L480 84 C449 100 429 91 401 111 S346 94 310 120 S254 101 210 132 S151 107 111 135 S54 118 0 146Z"></path><path class="chart-line" d="M0 128 C45 108 60 105 102 108 S164 77 204 99 S263 56 306 82 S369 38 406 66 S453 24 480 48"></path></svg><span class="visual-caption">FORECAST / ENSEMBLE SPREAD</span></div>
             <h3>Transfer learning for groundwater forecasts</h3>
-            <p>Ensemble LSTM models for European water-table depth prediction, with transfer learning and uncertainty assessment in data-scarce locations.</p>
-            <span class="project-foot">PyTorch · ERA5 · HPC · In review</span>
-          </a>
-          <a class="project-card" href="https://github.com/samimiaari95/Temporal_scaling_law" target="_blank" rel="noreferrer">
-            <div class="project-topline"><span>02 / PHYSICAL MODELLING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p>Trained spatio-temporal LSTM ensembles on hydro-meteorological reanalysis and numerical-model datasets to forecast groundwater-table depth across Europe. Evaluated transfer to unseen locations, measured accuracy and uncertainty using ensemble statistics, and validated predictions against monitoring data.</p>
+            <span class="project-foot">PyTorch · ERA5 · NVIDIA A100 / HPC · Manuscript in review</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>02 / HYDROLOGICAL MACHINE LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-visual surrogate-visual" aria-hidden="true"><span class="surrogate-box">PARFLOW<br>SIMULATION</span><span class="surrogate-arrow"></span><span class="surrogate-box surrogate-box-active">LSTM<br>SURROGATE</span><span class="surrogate-arrow"></span><span class="surrogate-box">FORECAST</span><span class="visual-caption">SIMULATION / SURROGATE / VALIDATION</span></div>
+            <h3>Ensemble LSTM surrogates for flow forecasting</h3>
+            <p>Trained ensemble spatio-temporal LSTM surrogate models using numerical-simulation and reanalysis data. Compared predictions with ground-truth monitoring data and used ensemble statistics to describe forecast uncertainty.</p>
+            <span class="project-foot">PyTorch · Numerical simulations · Reanalysis · Manuscript in review</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>03 / PHYSICAL MODELLING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
             <div class="project-visual soil-visual" aria-hidden="true"><div class="soil-layer layer-top"></div><div class="soil-layer layer-mid"></div><div class="soil-layer layer-bottom"></div><span class="water-line"></span><span class="soil-point point-one"></span><span class="soil-point point-two"></span><span class="soil-point point-three"></span><span class="visual-caption">INFILTRATION / DRAINAGE</span></div>
             <h3>Temporal scaling in variably saturated soils</h3>
-            <p>ParFlow simulations and dimensional analysis to investigate infiltration, drainage, soil texture, and water-table response.</p>
-            <span class="project-foot">ParFlow · Richards' equation · In review</span>
-          </a>
-          <a class="project-card" href="https://github.com/samimiaari95/dataset_extractor" target="_blank" rel="noreferrer">
-            <div class="project-topline"><span>03 / DATA ENGINEERING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <p>Built a reproducible ParFlow workflow to generate paired infiltration and drainage simulations across soil parameters, infiltration rates, and soil depths. Used dimensional analysis and power-law regression to investigate controls on the time each process takes to reach steady state.</p>
+            <span class="project-foot">ParFlow · Richards' equation · Buckingham π · Manuscript in review</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Temporal_scaling_law" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Temporal_scaling_law/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>04 / DATA ENGINEERING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">RAW<br>DATA</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">TRANSFORM</span><span class="pipeline-connector"></span><span class="pipeline-box">ANALYSIS<br>READY</span><span class="visual-caption">REPRODUCIBLE DATA FLOW</span></div>
-            <h3>Climate &amp; geospatial data workflows</h3>
-            <p>Python tooling for discovering, extracting, and preparing climate and geospatial data for repeatable analysis.</p>
-            <span class="project-foot">Python · NetCDF · GRIB · GeoTIFF</span>
-          </a>
+            <h3>Climate &amp; geospatial dataset converter</h3>
+            <p>Refactored data-preparation scripts into a reusable Python package and command-line tool. Discover matching files, aggregate daily series into weekly summaries, and collect remote dataset URLs for repeatable climate and geospatial workflows.</p>
+            <span class="project-foot">Python · CLI · CSV · NetCDF · MERRA / ERA5</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/dataset_extractor" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/dataset_extractor/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>05 / CLIMATE &amp; MACHINE LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-visual drought-visual" aria-hidden="true"><div class="drought-sun"></div><div class="drought-basin"></div><div class="drought-trace"></div><span class="visual-caption">REMOTE SENSING / NILE BASIN</span></div>
+            <h3>A machine-learning drought index for the Nile</h3>
+            <p>Combined remote-sensing and meteorological observations, including ERA5 reanalysis, with feature selection and feed-forward neural networks to develop a basin-specific drought-index approach for the Nile River Basin. An associated MATLAB toolbox implements W-QEISS, F-QEISS, and W-MOSS feature-selection methods, with example workflows for NSGA-II and the Borg optimizer.</p>
+            <span class="project-foot">Remote sensing · ERA5 · FFNN · Python / MATLAB · NSGA-II / Borg</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection" target="_blank" rel="noreferrer">View feature-selection toolbox <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection/archive/refs/heads/master.zip">Download MATLAB source <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>06 / HYDROLOGICAL ENGINEERING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-visual network-visual" aria-hidden="true"><span class="network-node network-source">SOURCE</span><span class="network-node network-tank">TANK</span><span class="network-node network-home">USERS</span><span class="network-pipe pipe-one"></span><span class="network-pipe pipe-two"></span><span class="network-pipe pipe-three"></span><span class="visual-caption">IZAL / WATER DISTRIBUTION</span></div>
+            <h3>Water-distribution network for Izal</h3>
+            <p>Graduation project designing a fresh-water network for the water-scarce Izal area in North Lebanon. Evaluated source, population, and demand data; modelled pumps, tanks, valves, and pipe sizing; and developed the network in WaterCAD and EPANET with elevation profiles in Civil 3D.</p>
+            <span class="project-foot">Graduation project · WaterCAD · EPANET · Civil 3D</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area" target="_blank" rel="noreferrer">View project files <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area/raw/main/Water_Distribution_Network_For_Izal_Area.pdf">Download project report (PDF) <span aria-hidden="true">↓</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>07 / ENVIRONMENTAL ANALYTICS</span></div>
+            <div class="project-visual air-visual" aria-hidden="true"><span class="air-wave air-wave-one"></span><span class="air-wave air-wave-two"></span><span class="air-metric metric-one"><span>NO₂</span><strong>DATA</strong></span><span class="air-metric metric-two"><span>AIR</span><strong>QUALITY</strong></span><span class="visual-caption">MONITORING / TRENDS / ALERTS</span></div>
+            <h3>Live air-quality dashboard</h3>
+            <p>Developed an automated Python platform to collect, clean, validate, and analyse air-quality and traffic data. Added data-quality checks and automated pipelines, and built interactive dashboards to surface pollutant trends, exceedances, and data inconsistencies for environmental monitoring and reporting.</p>
+            <span class="project-foot">Envisa · 2022 · Python · SQL · LaTeX</span>
+            <p class="project-note">Described in my CV; no public project repository or download link was listed.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>08 / APPLIED SOFTWARE</span></div>
+            <div class="project-visual pavement-visual" aria-hidden="true"><span class="road-lane"></span><span class="road-mark road-mark-one"></span><span class="road-mark road-mark-two"></span><span class="road-layer road-layer-one"></span><span class="road-layer road-layer-two"></span><span class="road-layer road-layer-three"></span><span class="visual-caption">PAVEMENT DESIGN / WEB TOOL</span></div>
+            <h3>Web-based pavement-design tool</h3>
+            <p>Developed a web-based software tool for pavement design during a civil-engineering role. The associated work also covered soil type and mechanics and applied pavement-design methods.</p>
+            <span class="project-foot">Transportation Engineering Solutions &amp; Technologies · 2018</span>
+            <p class="project-note">No public repository or downloadable project files were listed in my CVs.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>09 / ONGOING PERSONAL PROJECT</span></div>
+            <div class="project-visual civil-visual" aria-hidden="true"><span class="civil-outline civil-outline-one"></span><span class="civil-outline civil-outline-two"></span><span class="civil-contour contour-one"></span><span class="civil-contour contour-two"></span><span class="civil-contour contour-three"></span><span class="visual-caption">CIVIL 3D / MODELLING</span></div>
+            <h3>Civil 3D tutorial channel</h3>
+            <p>An ongoing, self-directed project sharing Civil 3D tutorials and building practical skills in civil-engineering design tools.</p>
+            <span class="project-foot">Ongoing · Autodesk Civil 3D</span>
+            <p class="project-note">No public channel or downloadable project link was listed in my CVs.</p>
+          </article>
         </div>
       </section>
 
