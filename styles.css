@@ -324,10 +324,9 @@ h2 span { color: var(--green); }
 .work-section { padding-block: 105px 112px; }
 .section-heading-compact h2 { font-size: clamp(34px, 4vw, 51px); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 43px; }
-.project-card { min-width: 0; padding: 18px 18px 21px; border: 1px solid #d9dbd2; background: #f9f8f2; transition: transform .2s ease, box-shadow .2s ease; }
-.project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px #1d292510; }
+.project-card { min-width: 0; padding: 18px 18px 21px; border: 1px solid #d9dbd2; background: #f9f8f2; transition: background-color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+.project-card:hover { transform: translateY(-4px); border-color: #ccd7c8; background: #e9eee4; box-shadow: 0 12px 26px #1d292510; }
 .project-card:focus-within { outline: 2px solid var(--green); outline-offset: 3px; }
-.project-featured { background: #e9eee4; border-color: #ccd7c8; }
 .project-topline { display: flex; align-items: center; justify-content: space-between; gap: 9px; color: #718078; font: 9px var(--mono); letter-spacing: .08em; }
 .project-topline > span:first-child { min-width: 0; }
 .project-arrow { color: var(--green); font-size: 15px; }
@@ -435,7 +434,9 @@ h2 span { color: var(--green); }
 .timeline-company-copy { min-width: 0; }
 .timeline-company { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
 .timeline-company-logo { width: 104px; height: 59px; flex: 0 0 auto; display: grid; place-items: center; padding: 5px; border: 1px solid #e1e2d9; background: #fffefa; }
-.timeline-company-logo img { width: 100%; height: 100%; object-fit: contain; }
+.timeline-company-logo img { width: 100%; height: 100%; min-width: 0; min-height: 0; display: block; object-fit: contain; }
+.timeline-company-logo-prontopro { overflow: hidden; background: #0766ff; }
+.timeline-company-logo-prontopro img { object-fit: cover; }
 .timeline-company-copy h3 { margin-bottom: 4px; }
 .timeline-item .timeline-employer { margin-bottom: 3px; color: #43544a; font-size: 11px; font-weight: 600; }
 .timeline-item .timeline-location { color: #78837b; font: 9px var(--mono); }
