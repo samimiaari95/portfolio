@@ -141,6 +141,7 @@ h1 {
   line-height: .99;
 }
 
+.hero-role { max-width: 500px; margin: -7px 0 20px; color: var(--green); font: 600 clamp(17px, 2vw, 22px)/1.45 var(--display); letter-spacing: -.035em; }
 h1 span,
 h2 span { color: var(--green); }
 
@@ -428,6 +429,13 @@ h2 span { color: var(--green); }
 .timeline-date { padding-top: 3px; color: var(--green); font: 9px var(--mono); letter-spacing: .04em; }
 .timeline-item h3 { margin: 0 0 8px; font: 600 15px var(--display); letter-spacing: -.03em; }
 .timeline-item p { max-width: 510px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.timeline-company { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+.timeline-company-logo { width: 104px; height: 59px; flex: 0 0 auto; display: grid; place-items: center; padding: 5px; border: 1px solid #e1e2d9; background: #fffefa; }
+.timeline-company-logo img { width: 100%; height: 100%; object-fit: contain; }
+.timeline-company-copy h3 { margin-bottom: 4px; }
+.timeline-item .timeline-employer { margin-bottom: 3px; color: #43544a; font-size: 11px; font-weight: 600; }
+.timeline-item .timeline-location { color: #78837b; font: 9px var(--mono); }
+.timeline-role > p:last-child { max-width: 510px; margin-top: 12px; }
 .education-card { padding: 22px 24px 8px; border: 1px solid #d3d5ca; background: #f3f2eb; }
 .education-entry { padding: 17px 0 18px; border-bottom: 1px solid #dedfd6; }
 .education-entry:last-child { border-bottom: 0; }
@@ -484,6 +492,7 @@ h2 span { color: var(--green); }
   .site-nav { display: none; }
   .hero { grid-template-columns: 1fr; padding-block: 58px 82px; }
   h1 { margin-top: 22px; font-size: clamp(48px, 14vw, 70px); }
+  .hero-role { max-width: 350px; font-size: 19px; }
   .hero-intro { max-width: 450px; font-size: 14px; }
   .hero-actions { gap: 17px; }
   .hero-meta { gap: 9px; font-size: 9px; }
@@ -516,6 +525,8 @@ h2 span { color: var(--green); }
   .career-layout { grid-template-columns: 1fr; gap: 30px; margin-top: 34px; }
   .timeline-item { grid-template-columns: 88px 1fr; gap: 12px; }
   .timeline-date { font-size: 8px; }
+  .timeline-company { align-items: flex-start; gap: 11px; }
+  .timeline-company-logo { width: 78px; height: 45px; }
   .closing { display: block; padding-block: 70px; }
   .closing-links { margin-top: 30px; }
   .closing-actions { width: 100%; }

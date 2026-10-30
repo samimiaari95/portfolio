@@ -1,8 +1,8 @@
-# Sami Miaari — Career Profile
+# Sami Miaari — Portfolio
 
-A lightweight, accessible career profile built as a static site for GitHub Pages. The expertise selector presents detailed evidence across applied machine learning, hydrology, geospatial data engineering, delivery, environmental systems, and scientific communication. The project portfolio presents research and engineering work with expanded project details, plots where available, and links to public code and reports.
+A lightweight, accessible professional portfolio built as a static site for GitHub Pages. Recruiters can explore detailed expertise across applied machine learning, hydrology, geospatial data engineering, delivery, environmental systems, and scientific communication, as well as selected research and engineering projects, supporting visuals, and public materials.
 
-Published site: <https://samimiaari95.github.io/mycareerpage/>
+Published site: <https://samimiaari95.github.io/portfolio/>
 
 ## Run locally
 
@@ -20,6 +20,6 @@ The workflow in `.github/workflows/pages.yml` enables GitHub Pages and deploys t
 
 ## Content
 
-The profile presents professional experience and research without personal contact details. Research manuscripts are described as under peer review, not as published work.
+The portfolio presents professional experience, education, and research, with direct contact links. Research manuscripts are described as under peer review, not as published work.
 
 The portfolio links to public repositories and downloadable materials where available. Supporting code and documents for company projects are identified as private and are not shared publicly.
