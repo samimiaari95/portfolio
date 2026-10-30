@@ -122,76 +122,74 @@
             <p class="eyebrow">02 / Project portfolio</p>
             <h2>Research, software &amp;<br><span>engineering in practice.</span></h2>
           </div>
-          <p class="section-aside">Selected research and engineering work, with project details, methods, and public materials where available.</p>
+          <p class="section-aside">Select <strong>Expand</strong> on any project for details, methods, and supporting visuals. Public code and materials are linked where available.</p>
         </div>
         <div class="project-grid">
           <article class="project-card project-featured">
-            <div class="project-topline"><span>01 / HYDROLOGICAL MACHINE LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-topline"><span>01 / HYDROLOGICAL MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-groundwater" aria-label="Expand Ensemble LSTM forecasting for groundwater details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual forecast-visual" aria-hidden="true">
               <div class="chart-grid"></div><svg viewBox="0 0 480 150" role="presentation"><path class="chart-band" d="M0 113 C45 99 60 110 102 89 S164 91 204 66 S263 79 306 46 S369 58 406 29 S453 38 480 14 L480 84 C449 100 429 91 401 111 S346 94 310 120 S254 101 210 132 S151 107 111 135 S54 118 0 146Z"></path><path class="chart-line" d="M0 128 C45 108 60 105 102 108 S164 77 204 99 S263 56 306 82 S369 38 406 66 S453 24 480 48"></path></svg><span class="visual-caption">FORECAST / ENSEMBLE SPREAD</span></div>
             <h3>Ensemble LSTM forecasting for groundwater</h3>
             <p>Developed spatio-temporal LSTM ensembles to forecast groundwater-table depth across Europe, transfer learning to locations with limited observations, and quantify uncertainty using hydro-meteorological data and model simulations.</p>
             <span class="project-foot">PyTorch · ERA5 · NVIDIA A100 / HPC · Manuscript in review</span>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-groundwater">Project details <span aria-hidden="true">↗</span></button><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>02 / PHYSICAL MODELLING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-topline"><span>02 / PHYSICAL MODELLING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-soil-scaling" aria-label="Expand Temporal scaling in variably saturated soils details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual soil-visual" aria-hidden="true"><div class="soil-layer layer-top"></div><div class="soil-layer layer-mid"></div><div class="soil-layer layer-bottom"></div><span class="water-line"></span><span class="soil-point point-one"></span><span class="soil-point point-two"></span><span class="soil-point point-three"></span><span class="visual-caption">INFILTRATION / DRAINAGE</span></div>
             <h3>Temporal scaling in variably saturated soils</h3>
             <p>Built a reproducible ParFlow workflow to generate paired infiltration and drainage simulations across soil parameters, infiltration rates, and soil depths. Used dimensional analysis and power-law regression to investigate controls on the time each process takes to reach steady state.</p>
             <span class="project-foot">ParFlow · Richards' equation · Buckingham π · Manuscript in review</span>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-soil-scaling">Project details <span aria-hidden="true">↗</span></button><a class="project-action" href="https://github.com/samimiaari95/Temporal_scaling_law" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Temporal_scaling_law/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Temporal_scaling_law" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Temporal_scaling_law/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>03 / DATA ENGINEERING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-topline"><span>03 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-dataset-converter" aria-label="Expand Climate and geospatial dataset converter details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">RAW<br>DATA</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">TRANSFORM</span><span class="pipeline-connector"></span><span class="pipeline-box">ANALYSIS<br>READY</span><span class="visual-caption">REPRODUCIBLE DATA FLOW</span></div>
             <h3>Climate &amp; geospatial dataset converter</h3>
             <p>Refactored data-preparation scripts into a reusable Python package and command-line tool. Discover matching files, aggregate daily series into weekly summaries, and collect remote dataset URLs for repeatable climate and geospatial workflows.</p>
             <span class="project-foot">Python · CLI · CSV · NetCDF · MERRA / ERA5</span>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-dataset-converter">Project details <span aria-hidden="true">↗</span></button><a class="project-action" href="https://github.com/samimiaari95/dataset_extractor" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/dataset_extractor/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/dataset_extractor" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/dataset_extractor/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>04 / CLIMATE &amp; MACHINE LEARNING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-topline"><span>04 / CLIMATE &amp; MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-drought" aria-label="Expand machine-learning drought index for the Nile details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual drought-visual" aria-hidden="true"><div class="drought-sun"></div><div class="drought-basin"></div><div class="drought-trace"></div><span class="visual-caption">REMOTE SENSING / NILE BASIN</span></div>
             <h3>A machine-learning drought index for the Nile</h3>
             <p>Combined remote-sensing and meteorological observations with feature selection and feed-forward neural networks to develop a basin-specific drought-index approach for the Nile River Basin.</p>
             <span class="project-foot">Remote sensing · ERA5 · NDVI · FFNN · Python / MATLAB</span>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-drought">Project details <span aria-hidden="true">↗</span></button><a class="project-action" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection" target="_blank" rel="noreferrer">Related MATLAB toolbox <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection/archive/refs/heads/master.zip">Download toolbox <span aria-hidden="true">↓</span></a></div>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection" target="_blank" rel="noreferrer">Related MATLAB toolbox <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection/archive/refs/heads/master.zip">Download toolbox <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>05 / HYDROLOGICAL ENGINEERING</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+            <div class="project-topline"><span>05 / HYDROLOGICAL ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-izal" aria-label="Expand water-distribution network for Izal details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual network-visual" aria-hidden="true"><span class="network-node network-source">SOURCE</span><span class="network-node network-tank">TANK</span><span class="network-node network-home">USERS</span><span class="network-pipe pipe-one"></span><span class="network-pipe pipe-two"></span><span class="network-pipe pipe-three"></span><span class="visual-caption">IZAL / WATER DISTRIBUTION</span></div>
             <h3>Water-distribution network for Izal</h3>
             <p>Graduation project designing a fresh-water network for the water-scarce Izal area in North Lebanon. Evaluated source, population, and demand data; modelled pumps, tanks, valves, and pipe sizing; and developed the network in WaterCAD and EPANET with elevation profiles in Civil 3D.</p>
             <span class="project-foot">Graduation project · WaterCAD · EPANET · Civil 3D</span>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-izal">Project details <span aria-hidden="true">↗</span></button><a class="project-action" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area" target="_blank" rel="noreferrer">View project files <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area/raw/main/Water_Distribution_Network_For_Izal_Area.pdf">Download project report (PDF) <span aria-hidden="true">↓</span></a></div>
+            <div class="project-actions"><a class="project-action" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area" target="_blank" rel="noreferrer">View project files <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area/raw/main/Water_Distribution_Network_For_Izal_Area.pdf">Download project report (PDF) <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>06 / ENVIRONMENTAL ANALYTICS</span></div>
+            <div class="project-topline"><span>06 / ENVIRONMENTAL ANALYTICS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-air-quality" aria-label="Expand live air-quality dashboard details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual air-visual" aria-hidden="true"><span class="air-wave air-wave-one"></span><span class="air-wave air-wave-two"></span><span class="air-metric metric-one"><span>NO₂</span><strong>DATA</strong></span><span class="air-metric metric-two"><span>AIR</span><strong>QUALITY</strong></span><span class="visual-caption">MONITORING / TRENDS / ALERTS</span></div>
             <h3>Live air-quality dashboard</h3>
             <p>Developed an automated Python platform to collect, clean, validate, and analyse air-quality and traffic data. Added data-quality checks and automated pipelines, and built interactive dashboards to surface pollutant trends, exceedances, and data inconsistencies for environmental monitoring and reporting.</p>
             <span class="project-foot">Envisa · 2022 · Python · SQL · LaTeX</span>
             <p class="project-note">Project materials are private to the company and cannot be shared publicly.</p>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-air-quality">Project details <span aria-hidden="true">↗</span></button></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>07 / APPLIED SOFTWARE</span></div>
+            <div class="project-topline"><span>07 / APPLIED SOFTWARE</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-pavement" aria-label="Expand web-based pavement-design tool details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pavement-visual" aria-hidden="true"><span class="road-lane"></span><span class="road-mark road-mark-one"></span><span class="road-mark road-mark-two"></span><span class="road-layer road-layer-one"></span><span class="road-layer road-layer-two"></span><span class="road-layer road-layer-three"></span><span class="visual-caption">PAVEMENT DESIGN / WEB TOOL</span></div>
             <h3>Web-based pavement-design tool</h3>
             <p>Developed a web-based software tool for pavement design during a civil-engineering role. The associated work also covered soil type and mechanics and applied pavement-design methods.</p>
             <span class="project-foot">Transportation Engineering Solutions &amp; Technologies · 2018</span>
             <p class="project-note">Project materials are private to the company and cannot be shared publicly.</p>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-pavement">Project details <span aria-hidden="true">↗</span></button></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>08 / ONGOING PERSONAL PROJECT</span></div>
+            <div class="project-topline"><span>08 / ONGOING PERSONAL PROJECT</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-civil3d" aria-label="Expand Civil 3D tutorial channel details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual civil-visual" aria-hidden="true"><span class="civil-outline civil-outline-one"></span><span class="civil-outline civil-outline-two"></span><span class="civil-contour contour-one"></span><span class="civil-contour contour-two"></span><span class="civil-contour contour-three"></span><span class="visual-caption">CIVIL 3D / MODELLING</span></div>
             <h3>Civil 3D tutorial channel</h3>
             <p>An ongoing, self-directed project sharing Civil 3D tutorials and building practical skills in civil-engineering design tools.</p>
             <span class="project-foot">Ongoing · Autodesk Civil 3D</span>
             <p class="project-note">Explore the Civil 3D tutorials on my YouTube channel.</p>
-            <div class="project-actions"><button class="project-action project-detail-trigger" type="button" data-project-detail="detail-civil3d">Project details <span aria-hidden="true">↗</span></button><a class="project-action project-action-download" href="https://www.youtube.com/@samimiaari8722" target="_blank" rel="noreferrer">Visit YouTube channel <span aria-hidden="true">↗</span></a></div>
+            <div class="project-actions"><a class="project-action project-action-download" href="https://www.youtube.com/@samimiaari8722" target="_blank" rel="noreferrer">Visit YouTube channel <span aria-hidden="true">↗</span></a></div>
           </article>
         </div>
         <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
@@ -348,10 +346,11 @@
         </div>
         <div class="closing-links">
           <p>Interested in applied AI, hydrology, or environmental data systems?</p>
-          <a class="button button-light" href="mailto:s.miaari@outlook.com">Email Sami Miaari <span aria-hidden="true">↗</span></a>
-          <a class="closing-email" href="mailto:s.miaari@outlook.com">s.miaari@outlook.com</a>
-          <a class="closing-linkedin" href="https://www.linkedin.com/in/samimiaari/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
-          <a class="closing-github" href="https://github.com/samimiaari95" target="_blank" rel="noreferrer">Explore my GitHub <span aria-hidden="true">↗</span></a>
+          <div class="closing-actions">
+            <a class="button button-light contact-button" href="mailto:s.miaari@outlook.com"><span aria-hidden="true">✉</span> Email <span class="contact-button-value">s.miaari@outlook.com</span></a>
+            <a class="button contact-button contact-button-secondary" href="https://www.linkedin.com/in/samimiaari/" target="_blank" rel="noreferrer"><span aria-hidden="true">in</span> LinkedIn <span class="contact-button-value">Professional profile ↗</span></a>
+            <a class="button contact-button contact-button-secondary" href="https://github.com/samimiaari95" target="_blank" rel="noreferrer"><span aria-hidden="true">⌘</span> GitHub <span class="contact-button-value">Code &amp; projects ↗</span></a>
+          </div>
         </div>
       </section>
     </main>
