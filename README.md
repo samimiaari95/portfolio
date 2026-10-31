@@ -22,4 +22,4 @@ The workflow in `.github/workflows/pages.yml` enables GitHub Pages and deploys t
 
 The portfolio presents professional experience, education, and research, with direct contact links and linked employer logos. Employer logo files are stored in `assets/` so the static site does not depend on third-party image hosting. Research manuscripts are described as under peer review, not as published work.
 
-The portfolio links to public repositories and downloadable materials where available. Supporting code and documents for company projects are identified as private and are not shared publicly.
+Project plots and diagrams shown in the expanded project details are stored locally in `assets/`. The portfolio links to public repositories and downloadable materials where available; supporting code, datasets, and credentials for private company projects are not shared publicly.

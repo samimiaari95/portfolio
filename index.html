@@ -155,8 +155,8 @@
             <div class="project-topline"><span>04 / CLIMATE &amp; MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-drought" aria-label="Expand machine-learning drought index for the Nile details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual drought-visual" aria-hidden="true"><div class="drought-sun"></div><div class="drought-basin"></div><div class="drought-trace"></div><span class="visual-caption">REMOTE SENSING / NILE BASIN</span></div>
             <h3>A machine-learning drought index for the Nile</h3>
-            <p>Combined remote-sensing and meteorological observations with feature selection and feed-forward neural networks to develop a basin-specific drought-index approach for the Nile River Basin.</p>
-            <span class="project-foot">Remote sensing · ERA5 · NDVI · FFNN · Python / MATLAB</span>
+            <p>Designed a basin-specific agricultural drought index for the Nile using weekly NDVI, hydro-meteorological predictors, feature selection, and regression models across 10 sub-basins.</p>
+            <span class="project-foot">MSc thesis · FRIDA · W-QEISS · Python / MATLAB</span>
             <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection" target="_blank" rel="noreferrer">Related MATLAB toolbox <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection/archive/refs/heads/master.zip">Download toolbox <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
@@ -192,6 +192,38 @@
             <p class="project-note">Explore the Civil 3D tutorials on my YouTube channel.</p>
             <div class="project-actions"><a class="project-action project-action-download" href="https://www.youtube.com/@samimiaari8722" target="_blank" rel="noreferrer">Visit YouTube channel <span aria-hidden="true">↗</span></a></div>
           </article>
+          <article class="project-card">
+            <div class="project-topline"><span>09 / WORKFLOW AUTOMATION</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-query-workflow" aria-label="Expand SQL query workflow details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">SQL<br>QUERIES</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">RUN</span><span class="pipeline-connector"></span><span class="pipeline-box">CSV<br>REPORTS</span><span class="visual-caption">QUERY / EXECUTE / PUBLISH</span></div>
+            <h3>Query-to-report automation</h3>
+            <p>Built a Python workflow to organize shared SQL queries, run selected jobs against MySQL and PostgreSQL, and publish structured CSV outputs for reporting.</p>
+            <span class="project-foot">ProntoPro · Python · SQL · Google Drive</span>
+            <p class="project-note">Internal queries, credentials, and generated data are not shared publicly.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>10 / GEOSPATIAL DATA</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-flight-tracks" aria-label="Expand flight-track geospatial workflow details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">RADAR<br>TRACKS</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">GROUP</span><span class="pipeline-connector"></span><span class="pipeline-box">GIS<br>VECTORS</span><span class="visual-caption">FLIGHT TRACKS / SHAPEFILES</span></div>
+            <h3>Flight-track clustering &amp; GIS</h3>
+            <p>Prepared airport radar trajectories, grouped operations by runway and traffic characteristics, and converted cleaned flight paths into GIS-ready WGS 84 shapefiles.</p>
+            <span class="project-foot">Python · GeoPandas · Shapely · EPSG:4326</span>
+            <p class="project-note">Client flight data and associated project materials are private.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>11 / ENVIRONMENTAL SYSTEMS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-lca" aria-label="Expand life-cycle assessment prototype details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">ACTIVITY</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">INVENTORY</span><span class="pipeline-connector"></span><span class="pipeline-box">IMPACT</span><span class="visual-caption">LIFE-CYCLE ASSESSMENT</span></div>
+            <h3>Brightway2 life-cycle assessment</h3>
+            <p>Prototyped Python workflows for process-based life-cycle inventory and impact calculations, with example comparisons across activities and characterization methods.</p>
+            <span class="project-foot">Brightway2 · Python · LCI / LCIA</span>
+            <p class="project-note">A research prototype using sample database content, not a production assessment service.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-topline"><span>12 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-data-pipeline" aria-label="Expand prospect data pipeline details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">SOURCE<br>DATA</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">VALIDATE</span><span class="pipeline-connector"></span><span class="pipeline-box">SYNC</span><span class="visual-caption">REPEATABLE DATA PIPELINE</span></div>
+            <h3>Data pipeline</h3>
+            <p>Developed modular data workflows for extracting, validating, and synchronizing prospect records between relational databases and connected services.</p>
+            <span class="project-foot">ProntoPro · Python · SQL · API integrations</span>
+            <p class="project-note">Internal systems, customer records, and credentials are not shared publicly.</p>
+          </article>
         </div>
         <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
           <div class="project-dialog-header">
@@ -210,7 +242,7 @@
             <p>To study transfer to data-scarce locations, I evaluate model behaviour at unseen sites. Ensemble members provide a distribution of predictions; their spread is used to assess forecast uncertainty alongside prediction accuracy. Numerical-model outputs are also used as simulation-derived training and validation data, with results checked against ground-truth station and piezometric monitoring observations.</p>
             <h3>Computational workflow</h3>
             <ul><li>Prepare and quality-check large hydro-meteorological datasets for spatially distributed time-series modelling.</li><li>Train spatio-temporal LSTM ensembles using PyTorch and distributed GPU computation on high-performance computing systems, including NVIDIA A100 GPUs.</li><li>Evaluate accuracy and ensemble uncertainty across locations, with particular attention to transfer to unseen and data-scarce regions.</li></ul>
-            <figure class="project-plot"><img src="https://raw.githubusercontent.com/samimiaari95/spatio-temporal-LSTM/main/outputs/20yrs_ts/rand100EU_yravg1mstd_ohe/rand100EU_yravg1mstd_ohe_100_160_prvpdsmxyindohe/rand100EU_yravg1mstd_ohe_100_160_prvpdsmxyindohe.png" alt="Example time-series prediction plot from the public spatio-temporal LSTM repository." loading="lazy"><figcaption>Example time-series output included in the public model repository. It illustrates the repository workflow; it is not presented as a quantitative result for every site.</figcaption></figure>
+            <figure class="project-plot"><img src="assets/groundwater-training-loss.png" alt="Example mean-squared-error curve from the spatio-temporal LSTM training workflow." loading="lazy"><figcaption>Example model-training output from the public repository, included to illustrate the workflow rather than as a regional forecast result.</figcaption></figure>
             <h3>Research status and materials</h3>
             <p>The associated research manuscript is under review. The public repository contains the example training and evaluation workflow, input data for its example, and a sample output. The code can be inspected or downloaded using the links on this project card.</p>
           </div>
@@ -229,9 +261,9 @@
             <ul><li>Generate parameterized simulation inputs and batch-run scripts.</li><li>Process simulation results and calculate infiltration and drainage steady-state times.</li><li>Fit and compare dimensionless scaling relationships across soil types and depths.</li></ul>
             <p class="project-detail-callout"><strong>Scaling relationships:</strong> Infiltration time follows <code>λ / SST<sub>i</sub> ∝ (α · d · q / K<sub>s</sub>)<sup>b</sup></code>, while drainage time follows <code>λ / (SST<sub>d</sub> · K<sub>s</sub>) ∝ (α · d)<sup>b</sup></code>. Here, <code>λ</code> is a characteristic length scale; <code>SST</code> is steady-state time; <code>α</code>, <code>K<sub>s</sub></code>, and <code>q</code> describe soil and infiltration properties; and <code>d</code> is soil depth.</p>
             <div class="project-plot-grid">
-              <figure class="project-plot"><img src="https://raw.githubusercontent.com/samimiaari95/Temporal_scaling_law/main/outputs/tinf_vs_d.png" alt="Repository plot showing infiltration steady-state time in relation to soil depth." loading="lazy"><figcaption>Infiltration steady-state time versus soil depth.</figcaption></figure>
-              <figure class="project-plot"><img src="https://raw.githubusercontent.com/samimiaari95/Temporal_scaling_law/main/outputs/tdr_vs_d.png" alt="Repository plot showing drainage steady-state time in relation to soil depth." loading="lazy"><figcaption>Drainage steady-state time versus soil depth.</figcaption></figure>
-              <figure class="project-plot"><img src="https://raw.githubusercontent.com/samimiaari95/Temporal_scaling_law/main/outputs/exfinf_lambda.png" alt="Repository plot comparing infiltration and drainage scaling relationships." loading="lazy"><figcaption>Comparison of infiltration and drainage scaling relationships.</figcaption></figure>
+              <figure class="project-plot"><img src="assets/soil-infiltration-scaling.png" alt="Dimensionless infiltration velocity plotted against the scaled infiltration parameter, with a fitted power law." loading="lazy"><figcaption>Infiltration scaling across soil types and saturated hydraulic conductivities.</figcaption></figure>
+              <figure class="project-plot"><img src="assets/soil-drainage-scaling.png" alt="Dimensionless drainage velocity plotted against scaled soil depth, with a fitted power law." loading="lazy"><figcaption>Drainage scaling against dimensionless soil depth.</figcaption></figure>
+              <figure class="project-plot"><img src="assets/soil-infiltration-drainage-comparison.png" alt="Drainage-to-infiltration steady-state time ratio plotted against characteristic length for different soil depths." loading="lazy"><figcaption>How the drainage-to-infiltration time ratio changes with characteristic length and soil depth.</figcaption></figure>
             </div>
             <h3>Outcome</h3>
             <p>The analysis derives separate scaling relationships for infiltration and drainage and examines their dependence on soil depth, hydraulic properties, and imposed infiltration. The research manuscript is under review; the public repository provides the workflow and plotted analysis outputs.</p>
@@ -252,25 +284,31 @@
         </template>
         <template id="detail-drought">
           <div class="project-detail-content">
-            <p class="project-detail-lead">A basin-specific drought-index modelling study combining remote sensing, meteorological data, feature selection, and neural-network modelling.</p>
-            <h3>Motivation</h3>
-            <p>Drought indicators designed for broad regions may not represent the characteristics of an individual basin. This project investigated how a remotely sensed indicator could be combined with meteorological information to create an index tailored to conditions in the Nile River Basin.</p>
-            <h3>Data and methods</h3>
-            <p>The workflow processed multi-source remote-sensing observations, including NDVI, alongside meteorological reanalysis data such as ERA5. Following a review of drought indicators and the FRIDA framework, I prepared candidate features, applied feature-selection methods, and trained a feed-forward neural network to model the basin-specific drought index.</p>
-            <ul><li>Integrate and prepare remote-sensing and meteorological datasets for analysis.</li><li>Use feature selection to identify informative inputs for a basin-scale drought model.</li><li>Apply supervised neural-network modelling to investigate drought monitoring and forecasting for the Nile and Mediterranean region.</li></ul>
-            <h3>Tools and related public code</h3>
-            <p>The analysis used Python and MATLAB, with additional processing on an Azure virtual machine. A public MATLAB repository linked to the work provides implementations of W-QEISS, F-QEISS, and W-MOSS multi-objective feature-selection algorithms. That repository is a feature-selection toolbox, not a public release of the complete drought-index analysis.</p>
-            <p class="project-detail-callout"><strong>Public materials:</strong> The related MATLAB toolbox is linked on the project card. Basin-specific data, complete analysis outputs, and supporting project documents are not publicly shared.</p>
+            <p class="project-detail-lead">A basin-specific drought-monitoring study for the Nile River Basin, built around weekly vegetation observations and hydrometeorological predictors.</p>
+            <h3>Study design</h3>
+            <p>The MSc thesis applied the FRIDA framework to design an index tailored to the Nile's varied climate, terrain, and land cover. The basin was divided into 10 sub-basins using hydrological, climatic, and land-cover characteristics; the analysis used 1,664 weekly observations spanning 1984–2016, excluding 2004.</p>
+            <h3>Data and modelling</h3>
+            <p>Observed NDVI was selected as the target because of its relevance to agricultural drought. Candidate predictors included precipitation, minimum and maximum temperature, evapotranspiration, river discharge, soil moisture, and SPI, drawing on remote sensing and ERA5/reanalysis products.</p>
+            <ul><li>Screen candidate inputs with W-QEISS feature selection, reducing model complexity while retaining predictive performance.</li><li>Construct and compare linear-regression and artificial-neural-network indices at basin and sub-basin scales.</li><li>Evaluate how spatial resolution, surface area, land cover, and sub-basin definition influence the results.</li></ul>
+            <figure class="project-plot project-plot-map"><img src="assets/drought-nile-sub-basins.png" alt="Map of the Nile River Basin and its sub-basins used in the drought-index study." loading="lazy"><figcaption>Study area and Nile sub-basins used for basin-specific index design.</figcaption></figure>
+            <div class="project-plot-grid">
+              <figure class="project-plot"><img src="assets/drought-ndvi-model-fit.png" alt="Observed and modelled NDVI series for the Nile River Basin using linear and neural-network models." loading="lazy"><figcaption>Observed NDVI compared with linear and neural-network model estimates.</figcaption></figure>
+              <figure class="project-plot"><img src="assets/drought-feature-selection-impact.png" alt="Comparison of index model performance using all predictors and W-QEISS-selected predictors across 10 Nile sub-basins." loading="lazy"><figcaption>Comparing all candidate features with the W-QEISS-selected subset across sub-basins.</figcaption></figure>
+            </div>
+            <h3>Findings and materials</h3>
+            <p>The thesis reports strong index performance in most sub-basins; results for 90% were described as outstanding, while weaker cases were associated with factors including land cover and sub-basin area. The analysis used Python and MATLAB.</p>
+            <p class="project-detail-callout"><strong>Scope:</strong> The public MATLAB repository linked on the card contains related multi-objective feature-selection algorithms, not the complete drought-index analysis or its source data.</p>
           </div>
         </template>
         <template id="detail-izal">
           <div class="project-detail-content">
             <p class="project-detail-lead">A civil-engineering graduation project to plan a reliable fresh-water distribution network for Izal, a water-scarce area in North Lebanon.</p>
             <h3>Planning and design</h3>
-            <p>The work addressed the need for a managed distribution network in a region experiencing chronic water shortages. I assessed water-source, population, demand, and elevation information to inform the network design and its impact on the local water balance.</p>
+            <p>The work addressed chronic water shortages in Izal, North Lebanon. The team collected and analysed terrain, population, demand, and water-source information, including a new source that enabled a redesign of the existing supply network.</p>
             <h3>Hydraulic network</h3>
-            <p>The system design included pumps, storage tanks, valves, and pipe sizing. WaterCAD and EPANET were used to model and evaluate distribution-network behaviour, including flow and pressure performance. Civil 3D was used to work with elevation data and produce pipe profiles from a digital elevation model; AutoCAD supported engineering documentation.</p>
-            <ul><li>Assess design context using source, demand, population, and terrain data.</li><li>Develop a fresh-water network layout and select key hydraulic components.</li><li>Model the network with WaterCAD and EPANET and prepare elevation profiles with Civil 3D.</li></ul>
+            <p>The team developed two design alternatives: an economical option that retained and modified existing tanks, and a more practical but higher-cost option with proposed new tank locations. Both designs included pumps, tanks, valves, and pipe sizing, and were evaluated for flow and pressure using WaterCAD and EPANET. Civil 3D and AutoCAD supported terrain profiles and engineering drawings.</p>
+            <ul><li>Translate source, demand, population, and elevation data into hydraulic design inputs.</li><li>Compare cost and operational practicality across two network layouts.</li><li>Model network performance and document pipe diameters, equipment, and zone demands.</li></ul>
+            <figure class="project-plot"><img src="assets/izal-water-network-layout.png" alt="Water-distribution network layout for Izal, showing zones, pipes, tanks, wells, and pumps." loading="lazy"><figcaption>Proposed Izal network layout from the graduation-project report.</figcaption></figure>
             <p class="project-detail-callout"><strong>Project report:</strong> The full graduation-project report is available to download from the project card, alongside the public project repository.</p>
           </div>
         </template>
@@ -280,18 +318,19 @@
             <h3>Data pipeline</h3>
             <p>I developed a Python-based platform to collect, clean, validate, and analyse air-quality and traffic data. Automated quality checks helped identify inconsistencies in source measurements before analysis and reporting.</p>
             <h3>Monitoring and reporting</h3>
-            <p>Interactive dashboards supported the exploration of pollutant trends, threshold exceedances, and data-quality issues. The workflow connected automated data preparation with practical monitoring outputs and supporting technical reports.</p>
-            <ul><li>Automate recurring collection, cleaning, and analysis tasks.</li><li>Apply data-quality checks to flag inconsistent measurements.</li><li>Present pollutant trends and exceedances in interactive monitoring dashboards.</li></ul>
+            <p>Interactive views brought pollutant and traffic measurements together for analysis over selectable time periods. The dashboard surfaced station-level trends, threshold exceedances, hourly patterns, and supporting reports; scheduled workflows refreshed monitoring data and report outputs.</p>
+            <ul><li>Automate recurring collection, normalization, validation, and reporting steps.</li><li>Explore pollutant concentrations, station comparisons, exceedances, and traffic trends.</li><li>Keep the dashboard and report library updated through scheduled data workflows.</li></ul>
             <p class="project-detail-callout"><strong>Confidentiality:</strong> The project code, datasets, and supporting documents are private to the company and cannot be shared publicly.</p>
           </div>
         </template>
         <template id="detail-pavement">
           <div class="project-detail-content">
-            <p class="project-detail-lead">A web-based pavement-design application developed as part of applied civil-engineering work.</p>
-            <h3>Engineering context</h3>
-            <p>The project brought pavement-design methods into a web-based software tool. Related engineering work covered soil types and soil mechanics, providing geotechnical context for transportation-infrastructure design.</p>
-            <h3>Scope</h3>
-            <ul><li>Develop a web-based tool for pavement-design workflows.</li><li>Apply civil-engineering and pavement-design knowledge in a practical software context.</li><li>Connect soil and materials understanding with transportation engineering.</li></ul>
+            <p class="project-detail-lead">A browser-based pavement design tool that adapts the AASHTO 1993 method to account for traffic, climate, reliability, and asphalt-mixture behaviour.</p>
+            <h3>Design workflow</h3>
+            <p>The application guides users through design inputs such as traffic loading (ESALs), design period, climate, reliability, layer materials, and subgrade properties, then calculates and presents a layered pavement structure.</p>
+            <h3>Material response</h3>
+            <p>Rather than treating asphalt as a single fixed material, the tool incorporates dynamic-modulus estimates based on mixture properties and temperature/frequency relationships, including Witczak and sigmoidal-model approaches represented in the project versions. The work connects pavement mechanics and soil-material knowledge with an interactive engineering workflow.</p>
+            <ul><li>Collect and validate design and material inputs through linked web pages.</li><li>Estimate asphalt dynamic modulus from mixture and climate conditions.</li><li>Calculate and display recommended layer thicknesses for the design scenario.</li></ul>
             <p class="project-detail-callout"><strong>Confidentiality:</strong> The application source code, design documents, and company project materials are private and cannot be shared publicly.</p>
           </div>
         </template>
@@ -302,6 +341,47 @@
             <p>The channel shares practical Civil 3D tutorials for civil-engineering design workflows, with step-by-step walkthroughs and examples.</p>
             <ul><li>Build and share practical proficiency with Civil 3D tools and workflows.</li><li>Explain common civil-engineering design tasks through instructional videos.</li><li>Continue developing the channel as an ongoing personal project.</li></ul>
             <p class="project-detail-callout"><strong>Explore:</strong> Visit the Sami Miaari YouTube channel to view the tutorials.</p>
+          </div>
+        </template>
+        <template id="detail-query-workflow">
+          <div class="project-detail-content">
+            <p class="project-detail-lead">A repeatable SQL-to-report workflow that organizes shared queries, executes selected database jobs, and publishes analysis-ready CSV files.</p>
+            <h3>Query management</h3>
+            <p>Python modules retrieve and organize query files from shared storage, apply optional name-based filters, and run supported MySQL or PostgreSQL queries. Query-owner and update-age metadata can be collected to support review of the query library.</p>
+            <h3>Output workflow</h3>
+            <ul><li>Execute the selected query set through a common command-line entry point.</li><li>Save tabular results as CSV files in a structured local output tree.</li><li>Synchronize generated files to corresponding shared-drive folders for downstream reporting.</li></ul>
+            <p class="project-detail-callout"><strong>Privacy:</strong> The internal query library, database credentials, and generated business data are not included in this portfolio.</p>
+          </div>
+        </template>
+        <template id="detail-flight-tracks">
+          <div class="project-detail-content">
+            <p class="project-detail-lead">An airport flight-track workflow for cleaning radar trajectories, organizing operational groups, and producing GIS-ready vector data.</p>
+            <h3>Trajectory preparation</h3>
+            <p>The analysis checks track-point counts, timestamp order and uniqueness, update rates, and altitude direction. It removes tracks with too few observations, sorts points chronologically, and corrects invalid elevation values before spatial export.</p>
+            <h3>Operational groups and vector output</h3>
+            <p>Flight operations are organized around operational attributes such as runway, arrival or departure type, traffic cluster, and stage length. For GIS use, each cleaned flight is represented as a WGS 84 LineString built from longitude and latitude, with flight, operation, and runway attributes, and written to an EPSG:4326 shapefile. A companion conversion step returns vector attributes and coordinates to CSV.</p>
+            <figure class="project-plot"><img src="assets/flight-track-shapefile-workflow.png" alt="Workflow diagram showing flight-track cleaning, shapefile creation, and conversion back to CSV." loading="lazy"><figcaption>Flight-track data preparation and vector export workflow.</figcaption></figure>
+            <p class="project-detail-callout"><strong>Clustering scope:</strong> The groups are operational traffic categories, not a spatial-density clustering model. Client flight data and associated materials are not shared publicly.</p>
+          </div>
+        </template>
+        <template id="detail-lca">
+          <div class="project-detail-content">
+            <p class="project-detail-lead">A Python prototype for repeatable process-based life-cycle inventory and impact calculations with Brightway2.</p>
+            <h3>Calculation workflow</h3>
+            <p>The example sets a Brightway2 project and database, resolves activities from their names or codes, defines a functional demand, and runs life-cycle inventory (LCI) and life-cycle impact assessment (LCIA) calculations using characterization methods.</p>
+            <h3>Comparative analysis</h3>
+            <ul><li>Calculate an impact score for a selected activity and method.</li><li>Reuse factorized inventory calculations while evaluating multiple activities.</li><li>Switch characterization methods to compare impacts across assessment perspectives.</li></ul>
+            <p class="project-detail-callout"><strong>Scope:</strong> The included scripts are a research prototype and example, using sample FORWAST database activities. They do not constitute a complete ecoinvent integration or a verified product assessment.</p>
+          </div>
+        </template>
+        <template id="detail-data-pipeline">
+          <div class="project-detail-content">
+            <p class="project-detail-lead">A modular internal data pipeline for extracting, validating, and synchronizing prospect records across database and service boundaries.</p>
+            <h3>Pipeline responsibilities</h3>
+            <p>The workflow separates database access, extraction, record processing, status updates, and uploads into focused Python modules. It supports contact-data checks and integrations with external services so records can be prepared and synchronized through repeatable jobs rather than manual one-off handling.</p>
+            <h3>Operational approach</h3>
+            <ul><li>Read and write structured records through relational database connections.</li><li>Validate and update contact or prospect status using the relevant service integrations.</li><li>Keep credentials in environment configuration rather than in the portfolio or public code.</li></ul>
+            <p class="project-detail-callout"><strong>Privacy:</strong> This was internal company tooling. Source code, customer records, service credentials, and operational configuration are not shared publicly.</p>
           </div>
         </template>
       </section>
@@ -367,7 +447,7 @@
                 <div class="timeline-role">
                   <div class="timeline-company">
                     <a class="timeline-company-logo" href="https://testsustainability.com/" target="_blank" rel="noreferrer" aria-label="Transportation Engineering Solutions and Technologies website">
-                      <img src="https://testsustainability.com/wp-content/uploads/2021/11/Artboard-1-300x167-1.png" alt="Transportation Engineering Solutions and Technologies (TEST) logo" width="300" height="167" loading="lazy">
+                      <img src="assets/test-logo.png" alt="Transportation Engineering Solutions and Technologies (TEST) logo" width="300" height="167" loading="lazy">
                     </a>
                     <div class="timeline-company-copy">
                       <h3>Civil Engineer</h3>
