@@ -337,6 +337,8 @@ h2 span { color: var(--green); }
 .forecast-visual { background: #dce6d7; }
 .chart-grid { position: absolute; inset: 0; background-image: linear-gradient(#ffffff70 1px, transparent 1px), linear-gradient(90deg, #ffffff70 1px, transparent 1px); background-size: 32px 32px; }
 .project-visual svg { width: 100%; position: absolute; inset: 0; }
+.project-visual-research { background: #f6f7f0; }
+.project-visual-research img { width: 100%; height: 100%; display: block; object-fit: contain; padding: 6px 8px 18px; }
 .chart-band { fill: #8ca78860; }
 .chart-line { fill: none; stroke: #376b53; stroke-width: 2.5; }
 .visual-caption { position: absolute; right: 10px; bottom: 9px; color: #68796d; font: 8px var(--mono); letter-spacing: .07em; }
@@ -418,6 +420,9 @@ h2 span { color: var(--green); }
 .project-plot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
 .project-plot { min-width: 0; margin: 0; padding: 10px; border: 1px solid #d9ddd3; background: #fff; }
 .project-plot img { width: 100%; max-height: 330px; display: block; object-fit: contain; }
+.project-plot-research { margin-block: 16px; }
+.project-plot-research > a { display: block; }
+.project-plot-research img { height: auto; max-height: none; }
 .project-plot figcaption { padding: 10px 3px 1px; color: #647169; font-size: 10px; line-height: 1.6; }
 .project-plot-map { width: min(100%, 390px); margin: 22px auto 0; }
 .project-plot-map img { width: auto; max-width: 100%; max-height: none; margin-inline: auto; }

@@ -20,6 +20,8 @@ The workflow in `.github/workflows/pages.yml` enables GitHub Pages and deploys t
 
 ## Content
 
-The portfolio presents professional experience, education, and research, with direct contact links and linked employer logos. Employer logo files are stored in `assets/` so the static site does not depend on third-party image hosting. Research manuscripts are described as under peer review, not as published work.
+The portfolio presents professional experience, education, and research, with direct contact links and linked employer logos. Employer logo files are stored in `assets/` so the static site does not depend on third-party image hosting.
 
 Project plots and diagrams shown in the expanded project details are stored locally in `assets/`. The portfolio links to public repositories and downloadable materials where available; supporting code, datasets, and credentials for private company projects are not shared publicly.
+
+The groundwater projects cover a [published TSMP-G2A simulation study](https://doi.org/10.3389/frwa.2026.1896829) and the [Global-LSTM follow-up](https://github.com/samimiaari95/global-LSTM) evaluating transfer against European and U.S. monitoring wells. Published study figures are credited to Miaari, Klotz and Kollet (2026) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Global-LSTM figures come from the project's observation-evaluation outputs.

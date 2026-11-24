@@ -126,17 +126,24 @@
           <p class="section-aside">Select <strong>Expand</strong> on any project for details, methods, and supporting visuals. Public code and materials are linked where available.</p>
         </div>
         <div class="project-grid">
-          <article class="project-card">
+          <article class="project-card" id="spatio-temporal-lstm">
             <div class="project-topline"><span>01 / HYDROLOGICAL MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-groundwater" aria-label="Expand Ensemble LSTM forecasting for groundwater details">Expand <span aria-hidden="true">↗</span></button></div>
-            <div class="project-visual forecast-visual" aria-hidden="true">
-              <div class="chart-grid"></div><svg viewBox="0 0 480 150" role="presentation"><path class="chart-band" d="M0 113 C45 99 60 110 102 89 S164 91 204 66 S263 79 306 46 S369 58 406 29 S453 38 480 14 L480 84 C449 100 429 91 401 111 S346 94 310 120 S254 101 210 132 S151 107 111 135 S54 118 0 146Z"></path><path class="chart-line" d="M0 128 C45 108 60 105 102 108 S164 77 204 99 S263 56 306 82 S369 38 406 66 S453 24 480 48"></path></svg><span class="visual-caption">FORECAST / ENSEMBLE SPREAD</span></div>
+            <div class="project-visual project-visual-research" aria-hidden="true"><img src="assets/lstm-tsmp-study-domain.jpg" width="886" height="774" alt=""><span class="visual-caption">TSMP-G2A / STUDY DOMAIN</span></div>
             <h3>Ensemble LSTM forecasting for groundwater</h3>
-            <p>Developed spatio-temporal LSTM ensembles to forecast groundwater-table depth across Europe, transfer learning to locations with limited observations, and quantify uncertainty using hydro-meteorological data and model simulations.</p>
-            <span class="project-foot">PyTorch · ERA5 · NVIDIA A100 / HPC · Manuscript in review</span>
-            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
+            <p>Trained two 100-member LSTM ensembles on European groundwater simulations and tested how well they transferred to unseen locations. Ensemble spread helped estimate depth errors and bias.</p>
+            <span class="project-foot">PyTorch · TSMP-G2A · Frontiers in Water, 2026</span>
+            <div class="project-actions"><a class="project-action project-action-download" href="https://doi.org/10.3389/frwa.2026.1896829">Read the paper <span aria-hidden="true">↗</span></a><a class="project-action" href="https://github.com/samimiaari95/spatio-temporal-LSTM">View research code <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" id="global-lstm">
+            <div class="project-topline"><span>02 / GROUNDWATER OBSERVATIONS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-global-lstm" aria-label="Expand Groundwater transfer against well observations details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-visual project-visual-research" aria-hidden="true"><img src="assets/global-lstm-europe-pearson.png" width="1740" height="870" alt=""><span class="visual-caption">EUROPE / OBSERVED ANOMALIES</span></div>
+            <h3>Groundwater transfer against well observations</h3>
+            <p>Ran a simulation-trained LSTM ensemble with ERA5-Land predictors and evaluated it against groundwater monitoring wells in Europe and the contiguous United States.</p>
+            <span class="project-foot">Global-LSTM · ERA5-Land · USGS NWIS · Ongoing research</span>
+            <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/global-LSTM">View Global-LSTM code <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>02 / PHYSICAL MODELLING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-soil-scaling" aria-label="Expand Temporal scaling in variably saturated soils details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>03 / PHYSICAL MODELLING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-soil-scaling" aria-label="Expand Temporal scaling in variably saturated soils details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual soil-visual" aria-hidden="true"><div class="soil-layer layer-top"></div><div class="soil-layer layer-mid"></div><div class="soil-layer layer-bottom"></div><span class="water-line"></span><span class="soil-point point-one"></span><span class="soil-point point-two"></span><span class="soil-point point-three"></span><span class="visual-caption">INFILTRATION / DRAINAGE</span></div>
             <h3>Temporal scaling in variably saturated soils</h3>
             <p>Built a reproducible ParFlow workflow to generate paired infiltration and drainage simulations across soil parameters, infiltration rates, and soil depths. Used dimensional analysis and power-law regression to investigate controls on the time each process takes to reach steady state.</p>
@@ -144,7 +151,7 @@
             <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Temporal_scaling_law" target="_blank" rel="noreferrer">View research code <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Temporal_scaling_law/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>03 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-dataset-converter" aria-label="Expand Climate and geospatial dataset converter details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>04 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-dataset-converter" aria-label="Expand Climate and geospatial dataset converter details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">RAW<br>DATA</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">TRANSFORM</span><span class="pipeline-connector"></span><span class="pipeline-box">ANALYSIS<br>READY</span><span class="visual-caption">REPRODUCIBLE DATA FLOW</span></div>
             <h3>Climate &amp; geospatial dataset converter</h3>
             <p>Refactored data-preparation scripts into a reusable Python package and command-line tool. Discover matching files, aggregate daily series into weekly summaries, and collect remote dataset URLs for repeatable climate and geospatial workflows.</p>
@@ -152,7 +159,7 @@
             <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/dataset_extractor" target="_blank" rel="noreferrer">View project <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/dataset_extractor/archive/refs/heads/main.zip">Download source <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>04 / CLIMATE &amp; MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-drought" aria-label="Expand machine-learning drought index for the Nile details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>05 / CLIMATE &amp; MACHINE LEARNING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-drought" aria-label="Expand machine-learning drought index for the Nile details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual drought-visual" aria-hidden="true"><div class="drought-sun"></div><div class="drought-basin"></div><div class="drought-trace"></div><span class="visual-caption">REMOTE SENSING / NILE BASIN</span></div>
             <h3>A machine-learning drought index for the Nile</h3>
             <p>Designed a basin-specific agricultural drought index for the Nile using weekly NDVI, hydro-meteorological predictors, feature selection, and regression models across 10 sub-basins.</p>
@@ -160,7 +167,7 @@
             <div class="project-actions"><a class="project-action" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection" target="_blank" rel="noreferrer">Related MATLAB toolbox <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/samimiaari95/Matlab-Multi-objective-Feature-Selection/archive/refs/heads/master.zip">Download toolbox <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>05 / HYDROLOGICAL ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-izal" aria-label="Expand water-distribution network for Izal details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>06 / HYDROLOGICAL ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-izal" aria-label="Expand water-distribution network for Izal details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual network-visual" aria-hidden="true"><span class="network-node network-source">SOURCE</span><span class="network-node network-tank">TANK</span><span class="network-node network-home">USERS</span><span class="network-pipe pipe-one"></span><span class="network-pipe pipe-two"></span><span class="network-pipe pipe-three"></span><span class="visual-caption">IZAL / WATER DISTRIBUTION</span></div>
             <h3>Water-distribution network for Izal</h3>
             <p>Graduation project designing a fresh-water network for the water-scarce Izal area in North Lebanon. Evaluated source, population, and demand data; modelled pumps, tanks, valves, and pipe sizing; and developed the network in WaterCAD and EPANET with elevation profiles in Civil 3D.</p>
@@ -168,7 +175,7 @@
             <div class="project-actions"><a class="project-action" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area" target="_blank" rel="noreferrer">View project files <span aria-hidden="true">↗</span></a><a class="project-action project-action-download" href="https://github.com/miaarisami/Water-Distribution-Network-For-Izal-Area/raw/main/Water_Distribution_Network_For_Izal_Area.pdf">Download project report (PDF) <span aria-hidden="true">↓</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>06 / ENVIRONMENTAL ANALYTICS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-air-quality" aria-label="Expand live air-quality dashboard details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>07 / ENVIRONMENTAL ANALYTICS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-air-quality" aria-label="Expand live air-quality dashboard details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual air-visual" aria-hidden="true"><span class="air-wave air-wave-one"></span><span class="air-wave air-wave-two"></span><span class="air-metric metric-one"><span>NO₂</span><strong>DATA</strong></span><span class="air-metric metric-two"><span>AIR</span><strong>QUALITY</strong></span><span class="visual-caption">MONITORING / TRENDS / ALERTS</span></div>
             <h3>Live air-quality dashboard</h3>
             <p>Developed an automated Python platform to collect, clean, validate, and analyse air-quality and traffic data. Added data-quality checks and automated pipelines, and built interactive dashboards to surface pollutant trends, exceedances, and data inconsistencies for environmental monitoring and reporting.</p>
@@ -176,7 +183,7 @@
             <p class="project-note">Project materials are private to the company and cannot be shared publicly.</p>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>07 / APPLIED SOFTWARE</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-pavement" aria-label="Expand web-based pavement-design tool details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>08 / APPLIED SOFTWARE</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-pavement" aria-label="Expand web-based pavement-design tool details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pavement-visual" aria-hidden="true"><span class="road-lane"></span><span class="road-mark road-mark-one"></span><span class="road-mark road-mark-two"></span><span class="road-layer road-layer-one"></span><span class="road-layer road-layer-two"></span><span class="road-layer road-layer-three"></span><span class="visual-caption">PAVEMENT DESIGN / WEB TOOL</span></div>
             <h3>Web-based pavement-design tool</h3>
             <p>Developed a web-based software tool for pavement design during a civil-engineering role. The associated work also covered soil type and mechanics and applied pavement-design methods.</p>
@@ -184,7 +191,7 @@
             <p class="project-note">Project materials are private to the company and cannot be shared publicly.</p>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>08 / ONGOING PERSONAL PROJECT</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-civil3d" aria-label="Expand Civil 3D tutorial channel details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>09 / ONGOING PERSONAL PROJECT</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-civil3d" aria-label="Expand Civil 3D tutorial channel details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual civil-visual" aria-hidden="true"><span class="civil-outline civil-outline-one"></span><span class="civil-outline civil-outline-two"></span><span class="civil-contour contour-one"></span><span class="civil-contour contour-two"></span><span class="civil-contour contour-three"></span><span class="visual-caption">CIVIL 3D / MODELLING</span></div>
             <h3>Civil 3D tutorial channel</h3>
             <p>An ongoing, self-directed project sharing Civil 3D tutorials and building practical skills in civil-engineering design tools.</p>
@@ -193,7 +200,7 @@
             <div class="project-actions"><a class="project-action project-action-download" href="https://www.youtube.com/@samimiaari8722" target="_blank" rel="noreferrer">Visit YouTube channel <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>09 / WORKFLOW AUTOMATION</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-query-workflow" aria-label="Expand SQL query workflow details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>10 / WORKFLOW AUTOMATION</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-query-workflow" aria-label="Expand SQL query workflow details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">SQL<br>QUERIES</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">RUN</span><span class="pipeline-connector"></span><span class="pipeline-box">CSV<br>REPORTS</span><span class="visual-caption">QUERY / EXECUTE / PUBLISH</span></div>
             <h3>Query-to-report automation</h3>
             <p>Built a Python workflow to organize shared SQL queries, run selected jobs against MySQL and PostgreSQL, and publish structured CSV outputs for reporting.</p>
@@ -201,7 +208,7 @@
             <p class="project-note">Internal queries, credentials, and generated data are not shared publicly.</p>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>10 / GEOSPATIAL DATA</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-flight-tracks" aria-label="Expand flight-track geospatial workflow details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>11 / GEOSPATIAL DATA</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-flight-tracks" aria-label="Expand flight-track geospatial workflow details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">RADAR<br>TRACKS</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">GROUP</span><span class="pipeline-connector"></span><span class="pipeline-box">GIS<br>VECTORS</span><span class="visual-caption">FLIGHT TRACKS / SHAPEFILES</span></div>
             <h3>Flight-track clustering &amp; GIS</h3>
             <p>Prepared airport radar trajectories, grouped operations by runway and traffic characteristics, and converted cleaned flight paths into GIS-ready WGS 84 shapefiles.</p>
@@ -209,7 +216,7 @@
             <p class="project-note">Client flight data and associated project materials are private.</p>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>11 / ENVIRONMENTAL SYSTEMS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-lca" aria-label="Expand life-cycle assessment prototype details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>12 / ENVIRONMENTAL SYSTEMS</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-lca" aria-label="Expand life-cycle assessment prototype details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">ACTIVITY</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">INVENTORY</span><span class="pipeline-connector"></span><span class="pipeline-box">IMPACT</span><span class="visual-caption">LIFE-CYCLE ASSESSMENT</span></div>
             <h3>Brightway2 life-cycle assessment</h3>
             <p>Prototyped Python workflows for process-based life-cycle inventory and impact calculations, with example comparisons across activities and characterization methods.</p>
@@ -217,7 +224,7 @@
             <p class="project-note">A research prototype using sample database content, not a production assessment service.</p>
           </article>
           <article class="project-card">
-            <div class="project-topline"><span>12 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-data-pipeline" aria-label="Expand prospect data pipeline details">Expand <span aria-hidden="true">↗</span></button></div>
+            <div class="project-topline"><span>13 / DATA ENGINEERING</span><button class="project-expand project-detail-trigger" type="button" data-project-detail="detail-data-pipeline" aria-label="Expand prospect data pipeline details">Expand <span aria-hidden="true">↗</span></button></div>
             <div class="project-visual pipeline-visual" aria-hidden="true"><span class="pipeline-box">SOURCE<br>DATA</span><span class="pipeline-connector"></span><span class="pipeline-box pipeline-box-active">VALIDATE</span><span class="pipeline-connector"></span><span class="pipeline-box">SYNC</span><span class="visual-caption">REPEATABLE DATA PIPELINE</span></div>
             <h3>Data pipeline</h3>
             <p>Developed modular data workflows for extracting, validating, and synchronizing prospect records between relational databases and connected services.</p>
@@ -234,17 +241,64 @@
         </dialog>
         <template id="detail-groundwater">
           <div class="project-detail-content">
-            <p class="project-detail-lead">Regional groundwater forecasting with spatio-temporal deep learning, transfer learning, and ensemble-based uncertainty assessment.</p>
-            <h3>Research question</h3>
-            <p>How can data-driven models forecast groundwater-table depth across Europe, including at locations where observations are sparse or unavailable, while communicating how uncertain each prediction is?</p>
-            <h3>Data and modelling approach</h3>
-            <p>I independently developed an end-to-end ensemble LSTM workflow, from acquiring and preparing hydro-meteorological data through model training and evaluation. The models learn spatial and temporal patterns from climate reanalysis and numerical-model datasets. The research uses precipitation, temperature, soil moisture, water level, discharge, and groundwater information.</p>
-            <p>To study transfer to data-scarce locations, I evaluate model behaviour at unseen sites. Ensemble members provide a distribution of predictions; their spread is used to assess forecast uncertainty alongside prediction accuracy. Numerical-model outputs are also used as simulation-derived training and validation data, with results checked against ground-truth station and piezometric monitoring observations.</p>
-            <h3>Computational workflow</h3>
-            <ul><li>Prepare and quality-check large hydro-meteorological datasets for spatially distributed time-series modelling.</li><li>Train spatio-temporal LSTM ensembles using PyTorch and distributed GPU computation on high-performance computing systems, including NVIDIA A100 GPUs.</li><li>Evaluate accuracy and ensemble uncertainty across locations, with particular attention to transfer to unseen and data-scarce regions.</li></ul>
-            <figure class="project-plot"><img src="assets/groundwater-training-loss.png" alt="Example mean-squared-error curve from the spatio-temporal LSTM training workflow." loading="lazy"><figcaption>Example model-training output from the public repository, included to illustrate the workflow rather than as a regional forecast result.</figcaption></figure>
-            <h3>Research status and materials</h3>
-            <p>The associated research manuscript is under review. The public repository contains the example training and evaluation workflow, input data for its example, and a sample output. The code can be inspected or downloaded using the links on this project card.</p>
+            <p class="project-detail-lead">Can an LSTM trained on groundwater simulations predict daily water-table depth at unseen locations, and can the disagreement among ensemble members help estimate its error there?</p>
+            <h3>Training data and predictors</h3>
+            <p>I prepared the coupled TSMP-G2A atmosphere, land-surface and groundwater simulations for the European CORDEX domain at 0.11° (about 12.5 km). The daily predictors were precipitation, vapour pressure deficit and soil moisture at 1 m depth, alongside terrain slopes, soil type, latitude and longitude. The target and evaluation reference were both simulated water-table depth (WTD). Filtering cells with persistently constant WTD left 43,226 usable cells.</p>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/lstm-tsmp-study-domain.jpg" target="_blank" rel="noreferrer" aria-label="Open full-size figure: European map of simulated mean water-table depth in 2020"><img src="assets/lstm-tsmp-study-domain.jpg" width="886" height="774" alt="European map of simulated mean water-table depth in 2020" loading="lazy"></a>
+              <figcaption>TSMP-G2A mean water-table depth across the filtered study domain. Reproduced from <a href="https://doi.org/10.3389/frwa.2026.1896829">Miaari, Klotz and Kollet (2026), Fig. 1</a> under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+            </figure>
+            <h3>Modelling and experimental design</h3>
+            <ul>
+              <li>Built a PyTorch workflow to train and evaluate 100 LSTMs per experiment on NVIDIA A100 GPUs. Each LSTM used 365 days of input, 256 hidden units and a single daily WTD output. Training used mean squared error and Adam over 100 epochs.</li>
+              <li>Compared 100 versus 400 geographically sampled cells per member, assigned without replacement across members. Models trained on 2002–2015 and were tested on 2017–2020. Both experiments shared 3,226 spatially held-out transfer cells. When testing cells used in training, I excluded the member trained on that cell from its ensemble mean.</li>
+              <li>Mapped Pearson correlation, root mean square error (RMSE), bias and Kling–Gupta efficiency (KGE), assessed ensemble predictions with the continuous ranked probability score (CRPS), and fit spread–skill relationships with five-fold spatially blocked cross-validation.</li>
+            </ul>
+            <h3>Results</h3>
+            <p class="project-detail-callout">Expanding training from 100 to 400 cells per member reduced transfer RMSE by <strong>11.52%</strong> and increased Pearson correlation by <strong>17.42%</strong>. Mean bias was similar between the two ensembles.</p>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/lstm-tsmp-performance-maps.jpg" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Four maps of Pearson correlation, RMSE, mean bias and Kling–Gupta efficiency across Europe"><img src="assets/lstm-tsmp-performance-maps.jpg" width="1772" height="1587" alt="Four maps of Pearson correlation, RMSE, mean bias and Kling–Gupta efficiency across Europe" loading="lazy"></a>
+              <figcaption>Skill against the simulation reference for the ensemble trained on 400 cells per member. Reproduced from <a href="https://doi.org/10.3389/frwa.2026.1896829">Miaari, Klotz and Kollet (2026), Fig. 7</a> under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+            </figure>
+            <p>On the transfer cells, time-averaged ensemble variance and interquartile range explained RMSE (cross-validated R² = 0.79–0.83) and absolute mean bias (0.72–0.76) better than Pearson correlation (0.31–0.40). This quantified which errors ensemble spread could help estimate within the simulation domain and motivated a separate study against monitoring wells.</p>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/lstm-tsmp-spread-skill.jpg" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Six plots comparing ensemble variance and interquartile range with RMSE, absolute bias and correlation"><img src="assets/lstm-tsmp-spread-skill.jpg" width="2040" height="2134" alt="Six plots comparing ensemble variance and interquartile range with RMSE, absolute bias and correlation" loading="lazy"></a>
+              <figcaption>Spread tracks RMSE and absolute bias more closely than Pearson correlation. Reproduced from <a href="https://doi.org/10.3389/frwa.2026.1896829">Miaari, Klotz and Kollet (2026), Fig. 8</a> under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+            </figure>
+            <h3>Publication and code</h3>
+            <p>Miaari, S., Klotz, D., and Kollet, S. (2026). <a href="https://doi.org/10.3389/frwa.2026.1896829">Evaluation of transfer learning in hydrological forecasting using ensemble LSTM models: a statistical approach to uncertainty and accuracy</a>. <em>Frontiers in Water</em>, 8, 1896829. The <a href="https://github.com/samimiaari95/spatio-temporal-LSTM">research repository</a> provides an example training and evaluation workflow, or you can <a href="https://github.com/samimiaari95/spatio-temporal-LSTM/archive/refs/heads/main.zip">download its source</a>.</p>
+          </div>
+        </template>
+        <template id="detail-global-lstm">
+          <div class="project-detail-content">
+            <p class="project-detail-lead">I extended the TSMP-G2A-trained, 100-member LSTM ensemble to test how well it transfers from simulated groundwater to monitoring wells and whether ensemble spread helps estimate errors against field observations.</p>
+            <h3>Data preparation and inference</h3>
+            <p>I prepared daily precipitation, vapour pressure deficit and soil moisture inputs from ERA5-Land, harmonized static predictors and matched well records to model cells. For the contiguous United States (CONUS), I used USGS National Water Information System (NWIS) well measurements through HydroData. I mapped the wells to the 0.1° ERA5-Land grid and matched slope and soil properties from ParFlow CONUS2 to the features expected by the trained models.</p>
+            <p>I reused all 100 PyTorch checkpoints with their original member-specific scalers and 365-day input histories. The Slurm and PyTorch distributed workflow runs inference on JURECA-DC GPUs and saves aligned daily WTD predictions in metres. The evaluation scripts check calendars, cell order and member outputs, then generate per-cell scores, maps and time series. I compared ensemble variance, interquartile range, member agreement and other spread measures against errors at the same cells.</p>
+            <h3>Europe · monthly groundwater anomalies</h3>
+            <p>For 1996–2012, I combined daily model outputs into monthly means on the TSMP grid and standardized each member separately using its calendar-month climatology before ensemble averaging. I compared those predictions with standardized anomalies supplied in a merged European well dataset. The documented verification run obtained <strong>357,000 paired cell-months across 1,750 cells</strong>, with a median cell KGE of 0.458 and pooled predictive R² of 0.111. These scores describe retrospective anomaly skill using climatologies derived over the evaluation period.</p>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/global-lstm-europe-pearson.png" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Pearson correlation map for European validation cells with a zoom on England and western–central Europe"><img src="assets/global-lstm-europe-pearson.png" width="1740" height="870" alt="Pearson correlation map for European validation cells with a zoom on England and western–central Europe" loading="lazy"></a>
+              <figcaption>Europe, 1996–2012. Pearson correlation between monthly standardized ensemble predictions and observed anomalies. Well coverage is concentrated in western and central Europe.</figcaption>
+            </figure>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/global-lstm-europe-timeseries.png" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Monthly European cell time series with individual ensemble members, observed anomalies and the ensemble mean"><img src="assets/global-lstm-europe-timeseries.png" width="990" height="374" alt="Monthly European cell time series with individual ensemble members, observed anomalies and the ensemble mean" loading="lazy"></a>
+              <figcaption>Example European grid cell. The ensemble mean captures some observed fluctuations while missing others (Pearson r = 0.40). The gray lines show individual ensemble members.</figcaption>
+            </figure>
+            <h3>Contiguous United States · daily water-table depth</h3>
+            <p>I evaluated absolute depth over 730 days from 1 March 2022 through 28 February 2024. I retained 660 wells across <strong>554 cells</strong> with complete daily observations, using a fixed set of equally weighted wells per cell. The ensemble mean achieved a median RMSE of <strong>7.55 m</strong> and median Pearson r of <strong>0.59</strong>. Depth errors varied widely among cells, and negative NSE at many cells shows that tracking timing alone can leave substantial errors in the absolute depth.</p>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/global-lstm-conus-rmse.png" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Map of daily water-table depth RMSE at evaluation cells in the contiguous United States"><img src="assets/global-lstm-conus-rmse.png" width="1305" height="725" alt="Map of daily water-table depth RMSE at evaluation cells in the contiguous United States" loading="lazy"></a>
+              <figcaption>Contiguous United States, March 2022–February 2024. RMSE in metres varies widely across evaluated grid cells.</figcaption>
+            </figure>
+            <figure class="project-plot project-plot-research">
+              <a href="assets/global-lstm-conus-timeseries.png" target="_blank" rel="noreferrer" aria-label="Open full-size figure: Daily U.S. cell time series with observations, ensemble mean and a wide 5th–95th percentile band"><img src="assets/global-lstm-conus-timeseries.png" width="990" height="374" alt="Daily U.S. cell time series with observations, ensemble mean and a wide 5th–95th percentile band" loading="lazy"></a>
+              <figcaption>Example U.S. grid cell. An RMSE of 0.94 m coincides with a negative Pearson correlation (−0.28), illustrating how small depth error can coexist with poor tracking of day-to-day changes.</figcaption>
+            </figure>
+            <h3>Contiguous United States · monthly groundwater anomalies</h3>
+            <p>I developed a separate evaluation for January 2020–December 2024. Screening observation continuity, static fields and ERA5-Land forcing yielded an inference dataset of <strong>784 cells and 984 wells</strong>. The evaluator aggregates daily member predictions, standardizes the observations and each member by calendar month, then compares the ensemble mean with the observed anomalies using RMSE, MAE, Pearson r, NSE and anomaly-specific KGE.</p>
+            <h3>Workflow and results</h3>
+            <p>The project documents the <a href="https://github.com/samimiaari95/global-LSTM/blob/main/era5land_observation_postprocessing.md">European anomaly evaluation</a>, <a href="https://github.com/samimiaari95/global-LSTM/blob/main/conusdaily_pipeline.md">daily CONUS evaluation</a> and <a href="https://github.com/samimiaari95/global-LSTM/blob/main/conusmonthly_pipeline.md">monthly CONUS evaluation</a>. The figures show completed European monthly and CONUS daily runs. The broader spread–skill analysis against wells remains ongoing.</p>
           </div>
         </template>
         <template id="detail-soil-scaling">
